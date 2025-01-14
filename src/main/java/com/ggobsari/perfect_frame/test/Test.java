@@ -28,4 +28,14 @@ public class Test {
         return "user/signup";
     }
 
+    @GetMapping("/profile")
+    public String Profile(){
+        return "user/profile";
+    }
+
+    @GetMapping("/buttons")
+    public String Buttons(){
+        return "buttons";
+    }
+
 }

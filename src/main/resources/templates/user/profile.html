@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/layout}">
+
+<head>
+    <link th:href="@{/css/user/profile/profile.css}" rel="stylesheet"/>
+</head>
+
+<th:block layout:fragment="content">
+    <body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <div class="p-5">
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">내 정보</h1>
+                    </div>
+                    <form class="user">
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-user" id="inputName"
+                                   placeholder="나중에 유저 이메일 데이터 받아올 것" readonly>
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <input type="text" class="form-control form-control-user" id="inputNickname"
+                                   placeholder="나중에 유저 닉네임 데이터 받아올 것" readonly>
+                            <a href="#" class="btn btn-secondary btn-icon-split">
+                                <span class="text">변경</span>
+                            </a>
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <input type="password" class="form-control form-control-user mr-2" id="inputPassword"
+                                   placeholder="비밀번호">
+                            <a href="#" class="btn btn-secondary btn-icon-split">
+                                <span class="text">변경</span>
+                            </a>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                오른손잡이<input type="radio" id="checkRight"
+                                            placeholder="오른손잡이" th:checked="false" readonly>
+                            </div>
+                            <div class="col-sm-6">
+                                왼손잡이<input type="radio" id="checkLeft"
+                                           placeholder="왼손잡이" th:checked="false" readonly>
+                            </div>
+                        </div>
+                        <div class="profileImage text-center mb-4">
+                            <!-- 이미지 미리보기 -->
+                            <img id="profilePreview" class="profile-preview rounded-circle"
+                                 src="https://via.placeholder.com/300">
+                            <!-- 파일 업로드 버튼 -->
+                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                            <p class="upload-instruction mt-2 text-gray-600">클릭하여 프로필 이미지를 업로드하세요</p>
+                        </div>
+                        <a href="login.html" class="btn btn-primary btn-user btn-block">
+                            확인
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </body>
+</th:block>
+
+</html>
