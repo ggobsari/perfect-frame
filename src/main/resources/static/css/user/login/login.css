@@ -1,0 +1,52 @@
+.bg-login-image {
+    width: 100%; /* 부모 요소가 전체 너비를 차지 */
+    height: 615.55px; /* 부모 요소가 원하는 높이를 차지 */
+    position: relative; /* 이미지 위치 조정을 위한 기준 설정 */
+    overflow: hidden; /* 초과 부분 숨김 */
+}
+
+.bg-login-image img {
+    position: absolute; /* 부모 요소를 기준으로 배치 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모 요소의 너비를 완전히 채움 */
+    height: 100%; /* 부모 요소의 높이를 완전히 채움 */
+    object-fit: cover; /* 비율을 유지하며 꽉 채우기 */
+}
+
+.btn-primary {
+    background-color: black !important; /* 우선순위를 강제로 높임 */
+}
+
+/* 구글 로그인 - 파란색 */
+.btn-google {
+    background-color: #4285F4 !important; /* 구글 파란색 */
+    color: white !important; /* 텍스트 색상 */
+    border: none !important; /* 테두리 제거 */
+}
+
+.btn-google:hover {
+    background-color: #3367D6 !important; /* hover 효과 */
+}
+
+/* 카카오 로그인 - 노란색 */
+.btn-kakao {
+    background-color: #FEE500 !important; /* 카카오 노란색 */
+    color: black !important; /* 텍스트 색상 */
+    border: none !important; /* 테두리 제거 */
+}
+
+.btn-kakao:hover {
+    background-color: #E0C200 !important; /* hover 효과 */
+}
+
+/* 네이버 로그인 - 초록색 */
+.btn-naver {
+    background-color: #03C75A !important; /* 네이버 초록색 */
+    color: white !important; /* 텍스트 색상 */
+    border: none !important; /* 테두리 제거 */
+}
+
+.btn-naver:hover {
+    background-color: #028A3D !important; /* hover 효과 */
+}

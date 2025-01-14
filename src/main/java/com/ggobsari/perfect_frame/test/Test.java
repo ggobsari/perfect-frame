@@ -18,4 +18,9 @@ public class Test {
         return "layout/layout";
     }
 
+    @GetMapping("/login")
+    public String Login(){
+        return "user/login";
+    }
+
 }
