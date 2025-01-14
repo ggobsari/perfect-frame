@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/layout}">
+
+<th:block layout:fragment="content">
+    <body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+
+                <!--                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>-->
+                <!--                    <div class="col-lg-7">-->
+                <div class="p-5">
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
+                    </div>
+                    <form class="user">
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-user" id="inputName"
+                                   placeholder="이메일">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="inputNickname"
+                                   placeholder="닉네임">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="password" class="form-control form-control-user"
+                                       id="inputPassword" placeholder="비밀번호">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control form-control-user"
+                                       id="repeatPassword" placeholder="비밀번호 확인">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                오른손잡이<input type="radio" id="checkRight"
+                                            placeholder="오른손잡이" th:checked="false">
+                            </div>
+                            <div class="col-sm-6">
+                                왼손잡이<input type="radio" id="checkLeft"
+                                           placeholder="왼손잡이" th:checked="false">
+                            </div>
+                        </div>
+                        <a href="login.html" class="btn btn-primary btn-user btn-block">
+                            확인
+                        </a>
+                    </form>
+                    <hr>
+                    <div class="text-center">
+                        이미 계정이 있으십니까? <a class="small" href="login.html">로그인</a>
+                    </div>
+                </div>
+                <!--                    </div>-->
+
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+</th:block>
+
+</html>

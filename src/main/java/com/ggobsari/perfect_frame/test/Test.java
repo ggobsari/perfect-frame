@@ -23,4 +23,9 @@ public class Test {
         return "user/login";
     }
 
+    @GetMapping("/signup")
+    public String Signup(){
+        return "user/signup";
+    }
+
 }
